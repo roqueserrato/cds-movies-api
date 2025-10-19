@@ -24,8 +24,8 @@ router.post("/login", async (req, res) => {
   const { email, password } = req.body || {};
   const users = await load("users");
   const u = users.find(x => x.email === email);
-  if (!u || !(await bcrypt.compare(password, u.password))) return res.status(401).json({ error: "Credenciales incorrectas" });
-
+  if (!u) return res.status(404).json({ error: "Usuario no registrado" });
+  if (!(await bcrypt.compare(password, u.password))) return res.status(401).json({ error: "Contraseña incorrecta" });
   const token = jwt.sign({ sub: u.id, email: u.email }, process.env.JWT_SECRET, { expiresIn: "2h" });
   res.json({ token });
 });

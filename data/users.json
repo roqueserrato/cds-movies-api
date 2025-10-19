@@ -1,14 +1,1 @@
-[
-  {
-    "id": "df9dc756-08ff-4447-8508-8a50195fc735",
-    "email": "demo@correo.com",
-    "password": "$2b$10$tKMp/vyQeObWHWarrwGb3u8Mj/b0Bzw/Hx/OUrD8tAQkHpU.GQeAa"
-  },
-  {
-    "id": "52141d18-7dee-409c-9923-d6bfe051a7ae",
-    "email": "demonio@correo.com",
-    "firstName": "Roque",
-    "lastName": "Serrato",
-    "password": "$2b$10$IMVAsQmq991CXqSCgt6IbOjkiQjwSlRzGZbZZs9iEhe1kSPEbQJ8u"
-  }
-]
+[]
