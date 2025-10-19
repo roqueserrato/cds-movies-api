@@ -9,6 +9,10 @@ const router = Router();
 router.post("/register", async (req, res) => {
   const { email, firstName, lastName, password } = req.body || {};
   if (!email || !firstName || !lastName || !password) return res.status(400).json({ error: "email, nombre, apellido y password requeridos" });
+  
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) return res.status(400).json({ error: "email inválido" });
+  if (password.length < 8) return res.status(400).json({ error: "password debe tener al menos 8 caracteres" });
 
   const users = await load("users");
   if (users.find(u => u.email === email)) return res.status(409).json({ error: "El usuario con ese email ya existe" });
