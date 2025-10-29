@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "userId": "01b9d1ac-e88d-491a-a79b-8904905b325a",
+    "addedAt": "2025-10-29T18:17:43.232Z",
+    "movie": {
+      "id": 1519168,
+      "title": "The Jester 2",
+      "overview": "When teen magician Max crosses paths with the sinister Jester on Halloween night, she must outsmart a supernatural killer whose magic is all too real and whose tricks always end up in blood.",
+      "poster_path": "/giV7FS7HGyxRbwqxudXPvv1RgXD.jpg",
+      "release_date": "2025-09-15",
+      "vote_average": 6.9
+    }
+  }
+]
